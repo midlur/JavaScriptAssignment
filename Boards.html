@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="common_styles.css">
+	<link rel="stylesheet" href="Boards.css">
+	<title>Trello-Project</title>
+</head>
+
+<header>
+	<nav class="menu">
+	    <a class="btn-menu home-head" href="index.html">Home</a>
+	    <a class="btn-menu tasks-head" href="tasks.html">Lists</a>
+	    <a class="btn-menu users-head" href="Boards.html">Boards</a>
+	</nav>
+
+	<section class="main-heading">
+		<!-- <img id="logo" src="logo.jpg"> -->
+		<span id="headname"> Trello</span>
+	</section>
+
+	 <button id="add-user-btn">Add Board</button>
+</header>
+
+<body>
+	
+	<!-- add user popup -->
+	<div id="add-user-popup" class="overlay">
+		<div class="popup">
+			<h2>Add a new Board</h2>
+			<a class="close" href="#">×</a>
+			<div class="add-user-popup-content">
+				<form id="add-user-form">
+					<div class = "form-element">
+						<label for="new-user-name">Enter Board Name</label>
+						<input type="text" name="new-user-name" id="new-user-name" autocomplete="off" required>
+					</div>
+
+					<button name="submit" id="new-user-submit">Submit</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!-- edit user popup -->
+	<div id="edit-user-popup" data-userId="" class="overlay">
+		<div class="popup">
+			<h2>Edit Board</h2>
+			<a class="close" href="#">×</a>
+			<div class="edit-user-popup-content">
+				<form id="edit-user-form">
+					<div class = "form-element">
+						<label for="edit-user-name">Name:</label>
+						<input type="text" name="edit-user-name" id="edit-user-name" autocomplete="off" required>
+					</div>
+
+					<br>
+					<button name="submit" id="edit-user-submit">Submit</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+     <!-- main body-->
+	 <div class="body-content">
+
+	 	<div class="user-display">
+	 	<ul id="all-users">
+	 		
+	 	</ul>
+	 	</div>
+	 </div>
+
+<script type="text/javascript" src="Boards.js"></script>
+</body>
+
+</html>

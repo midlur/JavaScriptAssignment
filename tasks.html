@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="common_styles.css">
+	<link rel="stylesheet" href="tasks.css">
+	<title>Trello-Project</title>
+</head>
+
+<header>
+	<nav class="menu">
+	    <a class="btn-menu home-head" href="index.html">Home</a>
+	    <a class="btn-menu tasks-head" href="tasks.html">Lists</a>
+	    <a class="btn-menu users-head" href="Boards.html">Boards</a>
+	</nav>
+
+	<section class="main-heading">
+		<!-- <img id="logo" src="logo.jpg"> -->
+		<span id="headname"> Trello</span>
+	</section>
+
+	<button id="head-add-task-btn">Add Card</button>
+</header>
+
+<body>
+
+	<!--  add task popup -->
+	 <div id="add-task-popup" class="overlay">
+		<div class="popup">
+			<h2>Add a new Card</h2>
+			<a class="close" href="#">×</a>
+			<div class="add-task-popup-content">
+				<form id="add-task-form">
+					<div class="form-element">
+						<label for="new-task-name">Card Name:</label>
+						<input type="text" name="new-task-name" id="new-task-name" autocomplete="off" required>
+					</div>
+
+					<div class="form-field">
+						<label for="new-task-description">Description:</label>
+						<textarea name="new-task-description" id="new-task-description" autocomplete="off"></textarea>
+					</div>
+				
+					<div class="form-element" style="visibility: hidden">
+						<label for="new-task-assignee">Board Name:</label>
+						<select name="new-task-assignee" id="new-task-assignee" required>
+						  
+						</select>
+					</div>
+
+					<button name="submit" id="new-task-submit">Create Card</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--  view task popup -->
+	 <div id="view-task-popup" data-taskId="" class="overlay">
+		<div class="popup">
+			<h2>Card Details</h2>
+			<a class="close" href="#">×</a>
+			<ul class="view-task-popup-content">
+				<li id="view-task-name"></li>
+				<li id="view-task-assignee" style="visibility: hidden"></li>
+				<li id="view-task-description"></li>
+			</ul>
+			<section>
+				<button id="view-task-edit">Edit Card</button>
+				<button id="view-task-delete">Delete Card</button>
+			</section>
+		</div>
+	</div>
+
+	<!--  edit task popup -->
+	 <div id="edit-task-popup" data-taskId="" class="overlay">
+		<div class="popup">
+			<h2>Edit Card</h2>
+			<a class="close" href="#">×</a>
+			<div class="edit-task-popup-content">
+				<form id="edit-task-form">
+					<div class="form-element">
+						<label for="edit-task-name">Card Name:</label>
+						<input type="text" name="edit-task-name" id="edit-task-name" autocomplete="off" required>
+					</div>
+
+					<div class="form-field">
+						<label for="edit-task-description">Description:</label>
+						<textarea name="edit-task-description" id="edit-task-description" autocomplete="off"></textarea>
+					</div>
+				
+					<div class="form-element" style="visibility: hidden">
+						<label for="edit-task-assignee">Board Name:</label>
+						<select name="edit-task-assignee" id="edit-task-assignee" required>
+								  
+						</select>
+					</div>
+
+					<button name="submit" id="edit-task-submit">Submit</button>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+     <!-- main body-->
+	 <div id="body-content">
+
+	 </div>
+
+<script type="text/javascript" src="tasks.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+#head-add-task-btn{
+  margin-top: 10px;
+  position: absolute;
+  right: 0%;
+  margin-bottom: 3px;
+  margin-right: 50px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(88, 24, 69);;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.tasks-head{
+  background-color: rgb(244,129,118);
+  color: rgb(88, 24, 69);
+}
+
+.user-column {
+  width: 240px;
+  min-width: 240px;
+  height: 730px;
+  float: left;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.task{
+  margin: 0 auto;
+  height: 80px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  white-space: nowrap; 
+  cursor: pointer;
+}
+
+.edit-del-task{
+  visibility: hidden;
+}
+
+.edit-task-btn,.del-task-btn{
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.task:hover .edit-del-task{
+  visibility: visible;
+}
+
+.task-list{
+  margin-top: 5px;
+  border: 2px solid gray;
+  padding: 5px;
+  background-color: white;
+  overflow-y: auto;    
+  overflow-x: hidden;
+  min-height: 50px;
+  max-height: 650px;
+}
+
+.list-header{
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-task-btn{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 25px;
+  border: 1px solid gray;
+  font-size: 16px;
+  border-radius: 5%;
+}
+
+#task-select{
+  width: 80px;
+  height: 25px;
+  font-size: 15px;
+}
+
+.task-name{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 2px;
+  padding-top: 2px;
+  font-weight: bold;
+}
+
+.task-details{
+  color: black;
+  font-style: italic; 
+  font-size: 13px;
+  text-align: right;
+  position: relative;
+  bottom: 0;
+  float: right;
+  margin: 3px;
+}
+
+.todo{
+  background-color: rgb(246,92,92);
+}
+
+.doing{
+  background-color: rgb(112,155,237);
+}
+
+.done{
+  background-color: rgb(159,229,164);
+}
+
+#add-task-form{
+  color: rgb(88, 24, 69);
+  text-align: left;
+}
+
+.form-field * {
+  vertical-align: middle;
+}
+
+#new-task-submit,#view-task-edit,#view-task-delete,#edit-task-submit{
+  margin:0 auto;
+  margin-top: 8px;
+  display:block;
+  height: 25px;
+  border: 2px solid gray;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.view-task-popup-content li{
+  text-align: left;
+  margin: 8px 0px;
+}
+
+.task-checkboxes {
+  margin-top: 5px;
+}

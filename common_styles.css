@@ -1,0 +1,148 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  background-color: rgb(66,121,149);
+  color: #CEF0D4; 
+  font-family: 'Rouge Script', cursive;  
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+
+body{
+  background-color: rgb(242,244,249);
+  color: rgb(62,65,79);
+  font: 15px Helvetica Neue,Arial,Helvetica,sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type:none;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  text-align: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+.menu{
+  padding-top: 10px;
+  display: flex;
+}
+
+.main-heading{
+  padding-top: 2px;
+  display: flex;
+  position: absolute;
+  left: 45%;
+  width: 240px;
+}
+
+#headname{
+  align-self: center;
+  font-size: 24px;
+  padding-left: 5px;
+  text-shadow: 1px 1px 2px #082b34;
+}
+
+#logo{
+  width: 40px;
+  height: 40px;
+}
+
+.btn-menu {
+  background-color: rgb(203,238,249);
+  color: rgb(39,71,40);
+  font: 14px Helvetica;
+  font-variant: small-caps;
+  font-size: 20px;
+  border-radius: 5px;
+  margin-left: 5px;
+  border: 1px solid #dfe2e5;
+  padding: 2px 10px;
+}
+
+.home-head{
+  margin-left: 10px;
+}
+
+#body-content{
+  display: inline-flex;
+  width: 100%;
+  padding: 10px;
+  overflow-x: auto;
+}
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 100px auto;
+  padding: 20px;
+  background: rgb(249, 249, 249);
+  border: 2px solid rgb(88, 24, 69);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  text-align: center;
+  margin-top: 0;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: rgb(255,0,0);
+}
+
+.form-element{
+  margin: 15px 0px;
+}
+
+.form-element:after { 
+  content: " *";
+  color: red; 
+}

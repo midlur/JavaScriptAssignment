@@ -1,0 +1,115 @@
+.users-head{
+  background-color: rgb(244,129,118);
+  color: rgb(88, 24, 69);
+}
+
+.add-user{
+  margin-top: 20px;
+  margin-left: 50px;
+  /*margin-bottom: 10px;*/
+}
+
+.user-display{
+  /*margin-top: 10px;*/
+  margin-left: 60px;
+  height: 730px;
+  overflow-x: auto;
+  white-space: nowrap;
+  overflow-y: auto;
+}
+
+.user{
+  /*display: inline-block;*/
+  float:left;
+  height: 120px;
+  margin: 20px 25px;
+  border: 2px solid gray;
+  padding: 3px;
+  background-color: white;
+}
+
+.user-section{
+  text-align: left;
+  display: inline-block;
+  width: 180px;
+}
+
+.edit-del-user{
+   visibility: hidden;
+}
+
+.edit-user-btn,.del-user-btn{
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  height: 25px;
+}
+
+.user:hover .edit-del-user{
+  visibility: visible;
+}
+
+.user-name{
+  width: 180px;
+  padding-left: 5px;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.role,.skypeID,.email{
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-left: 5px;
+  display: block;
+}
+
+.user-image{
+  float: right;
+}
+
+.user-image > img{
+  display: inline-block;
+  margin-left: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+#add-user-btn{
+  margin-top: 10px;
+  position: absolute;
+  right: 0%;
+  margin-bottom: 3px;
+  margin-right: 50px;
+  width: 100px;
+  height: 30px;
+  border: 1px solid rgb(88, 24, 69);;
+  font-size: 16px;
+  border-radius: 5px;
+  /* position: fixed;
+bottom: 100px;
+right: 100px; */
+}
+
+.add-user-form{
+  color: rgb(88, 24, 69);
+  text-align: left;
+}
+
+#edit-user-submit,#new-user-submit{
+  margin:0 auto;
+  margin-top: 10px;
+  display: block;
+  height: 25px;
+  border: 2px solid gray;
+  font-size: 14px;
+  border-radius: 5px;
+}
